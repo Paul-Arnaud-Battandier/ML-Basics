@@ -9,9 +9,13 @@
 🛠️ Methodology & OptimizationFeature SelectionFor the selected model, a rigorous variable selection process was conducted to observe how the test error evolves with different feature subsets .Hyperparameter TuningTwo specific models underwent hyperparameter optimization to maximize performance and minimize overfitting.Final Model AnalysisThe model with the highest weighted F1-score (typically XGBoost) was selected for a final diagnostic, including:ROC Curve analysis.Identification of model limitations and weaknesses.
 
 📁 Repository StructurePlaintext.
+
 ├── Nom1_Nom2_Nom3_code.ipynb    # Fully commented Google Colab Notebook
+
 ├── Nom1_Nom2_Nom3_projet.pdf    # 2-page summary note + 3-page appendix
+
 ├── data/                        # Dataset folder
+
 └── README.md                    # Project documentation
 
 ⚙️ RequirementsTo run the code provided in the notebook, the following Python libraries are required:pandas, numpy (Data manipulation)scikit-learn (Standard ML models & metrics)xgboost (Advanced Gradient Boosting)matplotlib, seaborn (Visualization)
