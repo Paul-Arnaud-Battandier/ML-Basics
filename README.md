@@ -1,21 +1,39 @@
-🏦 Corporate Default Prediction: A Machine Learning BenchmarkThis project aims to predict corporate default using a dataset containing 60 explanatory variables and one binary target variable. The objective is to achieve the best possible prediction rate while comparing several classification algorithms.
+# Corporate Default Prediction - Machine Learning Benchmark
 
-🎯 Project ScopeThe project is divided into four main operational stages:Model Benchmarking: Comparing the performance of five standard algorithms plus an advanced model (XGBoost) .Feature Engineering: Selecting the most relevant variables to reduce test error.Hyperparameter Optimization: Tuning models to find the ideal configuration for prediction.Final Evaluation: Deep-dive analysis of the most performing model based on the weighted F1-score.
+This project focuses on predicting corporate bankruptcy using a dataset of sixty explanatory variables and one binary target. The primary objective is to evaluate and compare the efficacy of diverse classification algorithms to achieve the highest possible predictive accuracy.
 
-🤖 Algorithms ImplementedThe following models were implemented and compared using the same set of explanatory variables:Logistic Regression K-Nearest Neighbors (KNN) Random Forest Support Vector Machine (SVM) Neural Networks Advanced Model: XGBoost (Chosen for its high efficiency in tabular data classification).
+## Project Scope
 
-📊 Evaluation MetricsEach model was evaluated according to:Precision & Recall Weighted F1-score Classification Accuracy Rate Computation Time 
+The implementation follows a structured operational workflow designed to maximize model performance:
 
-🛠️ Methodology & OptimizationFeature SelectionFor the selected model, a rigorous variable selection process was conducted to observe how the test error evolves with different feature subsets .Hyperparameter TuningTwo specific models underwent hyperparameter optimization to maximize performance and minimize overfitting.Final Model AnalysisThe model with the highest weighted F1-score (typically XGBoost) was selected for a final diagnostic, including:ROC Curve analysis.Identification of model limitations and weaknesses.
+*   **Model Benchmarking**: Comparative analysis of standard classifiers against advanced gradient boosting techniques.
+*   **Feature Engineering**: Rigorous selection of the most relevant variables to reduce test error and improve generalization.
+*   **Hyperparameter Optimization**: Systematic tuning of model configurations to find the ideal balance for prediction.
+*   **Final Evaluation**: Comprehensive diagnostic of the top performing model based on the weighted F1 score.
 
-📁 Repository StructurePlaintext.
+## Repository Structure
 
-├── Nom1_Nom2_Nom3_code.ipynb    # Fully commented Google Colab Notebook
+| File / Directory | Technical Purpose |
+| :--- | :--- |
+| `0Bankruptcy_T.csv` | Primary dataset containing financial indicators and the binary target variable |
+| `Comparaison_Modeles.xlsx` | Detailed spreadsheet summarizing performance metrics across all tested algorithms |
+| `MachineLearning.ipynb` | Comprehensive research notebook including data cleaning and model training |
 
-├── Nom1_Nom2_Nom3_projet.pdf    # 2-page summary note + 3-page appendix
+## Algorithms and Methodology
 
-├── data/                        # Dataset folder
+The project implements a wide range of machine learning models to identify the most robust solution:
 
-└── README.md                    # Project documentation
+*   **Standard Models**: Logistics Regression, K Nearest Neighbors, Random Forest, SVM, and Neural Networks.
+*   **Advanced Model**: XGBoost was integrated for its high efficiency in handling complex tabular data classification.
+*   **Metrics Framework**: Accuracy is measured alongside Precision, Recall, Weighted F1 score, and Computation Time.
+*   **Final Diagnostics**: The selected model undergoes ROC Curve analysis to identify specific limitations and strengths.
 
-⚙️ RequirementsTo run the code provided in the notebook, the following Python libraries are required:pandas, numpy (Data manipulation)scikit-learn (Standard ML models & metrics)xgboost (Advanced Gradient Boosting)matplotlib, seaborn (Visualization)
+## Technical Stack
+
+*   **Data Manipulation**: Pandas and NumPy for robust dataset handling.
+*   **Modeling**: Scikit Learn for standard algorithms and XGBoost for advanced boosting.
+*   **Visualization**: Matplotlib and Seaborn for performance and feature importance analysis.
+
+## Conclusion
+
+The benchmark confirms that systematic variable selection combined with hyperparameter tuning significantly enhances prediction rates. The final results highlight how gradient boosting often outperforms traditional linear models when dealing with high dimensional financial data.
